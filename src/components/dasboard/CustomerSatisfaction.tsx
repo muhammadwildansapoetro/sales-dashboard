@@ -72,11 +72,11 @@ export default function CustomerSatisfaction() {
             <defs>
               <linearGradient id="colorLastMonth" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#3495ff" stopOpacity={0.3} />
-                <stop offset="45%" stopColor="#3495ff" stopOpacity={0} />
+                <stop offset="50%" stopColor="#3495ff" stopOpacity={0} />
               </linearGradient>
               <linearGradient id="colorThisMonth" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#1be098" stopOpacity={0.3} />
-                <stop offset="45%" stopColor="#1be098" stopOpacity={0} />
+                <stop offset="40%" stopColor="#1be098" stopOpacity={0} />
               </linearGradient>
             </defs>
             <Tooltip />

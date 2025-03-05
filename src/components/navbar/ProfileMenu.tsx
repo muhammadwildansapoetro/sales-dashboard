@@ -11,7 +11,7 @@ export default function ProfileMenu() {
     <div className="w-48">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-4 hover:cursor-pointer hover:rounded-xl hover:bg-indigo-50"
+        className="flex items-center gap-4 transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:bg-indigo-50"
       >
         <div className="h-12 w-12 overflow-hidden rounded-xl">
           <Image

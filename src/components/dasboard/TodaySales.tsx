@@ -10,7 +10,7 @@ export default function TodaySales() {
           <h1 className="text-xl font-bold text-gray-700">Today's Sales</h1>
           <h2 className="mt-2 text-lg text-gray-400">Sales Summary</h2>
         </div>
-        <button className="group flex items-baseline gap-2 rounded-xl border border-gray-400 p-2 hover:cursor-pointer hover:bg-indigo-500">
+        <button className="group flex items-baseline gap-2 rounded-xl border border-gray-400 p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-indigo-500">
           <CgExport className="group-hover:text-white" />
           <p className="text-gray-900 group-hover:text-white">Export</p>
         </button>

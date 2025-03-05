@@ -16,7 +16,7 @@ export default function NotificationBell() {
     <div className="relative">
       <button
         onClick={toggleNotification}
-        className="relative flex items-center justify-center rounded-xl bg-orange-50 p-3 hover:scale-105 hover:cursor-pointer"
+        className="relative flex items-center justify-center rounded-xl bg-orange-50 p-3 transition-all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer"
       >
         <Bell className="h-6 w-6 text-orange-500" />
         {hasNotification && (

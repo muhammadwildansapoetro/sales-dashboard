@@ -13,6 +13,7 @@ export default function TargetVsReality() {
     },
     { realitySales: 0, targetSales: 0 },
   );
+
   return (
     <div className="flex h-full flex-col justify-between">
       <div>
