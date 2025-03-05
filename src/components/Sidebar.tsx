@@ -37,7 +37,7 @@ export default function Sidebar() {
         {menuList.map((menu) => (
           <li
             key={menu.name}
-            className={`flex items-center space-x-2 rounded-lg p-3 transition hover:scale-105 hover:cursor-pointer ${
+            className={`flex items-center space-x-2 rounded-lg p-3 transition-all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer ${
               selectedMenu === menu.name
                 ? "bg-indigo-500 text-white"
                 : "text-gray-600 hover:bg-indigo-100"

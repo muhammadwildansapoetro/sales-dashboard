@@ -1,34 +1,4 @@
-import { topProducts } from "@/data/topProduct";
-
-const colorMap: Record<
-  string,
-  { bar: string; text: string; border: string; bg: string }
-> = {
-  blue: {
-    bar: "bg-blue-500",
-    text: "text-blue-500",
-    border: "border-blue-500",
-    bg: "bg-blue-100",
-  },
-  green: {
-    bar: "bg-green-500",
-    text: "text-green-500",
-    border: "border-green-500",
-    bg: "bg-green-100",
-  },
-  purple: {
-    bar: "bg-purple-500",
-    text: "text-purple-500",
-    border: "border-purple-500",
-    bg: "bg-purple-100",
-  },
-  orange: {
-    bar: "bg-orange-500",
-    text: "text-orange-500",
-    border: "border-orange-500",
-    bg: "bg-orange-100",
-  },
-};
+import { colorMap, topProducts } from "@/data/topProduct";
 
 export default function TopProduct() {
   return (
@@ -72,7 +42,7 @@ export default function TopProduct() {
                   className={`${colorMap[product.color].bg} flex items-center justify-center rounded-xl border ${colorMap[product.color].border} py-1`}
                 >
                   <p className={`text-xs ${colorMap[product.color].text}`}>
-                    {product.popularity}%
+                    {product.sales}%
                   </p>
                 </div>
               </td>

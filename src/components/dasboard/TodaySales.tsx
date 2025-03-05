@@ -16,7 +16,7 @@ export default function TodaySales() {
         </button>
       </div>
 
-      <div className="grid-cols-2 gap-5 not-first:grid md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
         <div className="flex aspect-square flex-col items-start justify-between rounded-2xl bg-red-100 p-5">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-300">
             <FileChartColumnIncreasing className="text-white" />
