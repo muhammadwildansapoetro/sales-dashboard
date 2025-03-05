@@ -6,8 +6,9 @@ import { useState } from "react";
 
 export default function ProfileMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
-    <div>
+    <div className="w-48">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-4 hover:cursor-pointer hover:rounded-xl hover:bg-indigo-50"
@@ -23,7 +24,7 @@ export default function ProfileMenu() {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="flex items-start gap-10">
+        <div className="flex items-start gap-16">
           <div className="flex flex-col items-start">
             <p className="font-semibold text-gray-700">Name</p>
             <p className="text-gray-400">Role</p>
@@ -33,7 +34,7 @@ export default function ProfileMenu() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-2 mt-2 w-48 rounded-lg bg-white shadow-lg">
+        <div className="absolute right-5 mt-2 w-48 rounded-lg bg-white shadow-lg">
           <ul className="py-2 text-gray-700">
             <li className="flex cursor-pointer items-center gap-2 px-4 py-2 hover:bg-gray-100">
               <User className="h-4 w-4" />

@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { languageOptions, LanguageSelectorProps } from "./language";
+import { ILanguage, languageOptions } from "./language";
+import { useState } from "react";
 
-export default function LanguageSelector({
-  selectedLanguage,
-  setSelectedLanguage,
-}: LanguageSelectorProps) {
+export default function LanguageSelector() {
+  const [selectedLanguage, setSelectedLanguage] = useState<ILanguage>(
+    languageOptions[1],
+  );
+
   const handleChangeLanguage = (
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {

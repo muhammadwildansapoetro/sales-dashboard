@@ -1,10 +1,12 @@
-export const topProducts: {
+interface ITopProduct {
   id: string;
   name: string;
   popularity: number;
   sales: number;
   color: string;
-}[] = [
+}
+
+export const topProducts: ITopProduct[] = [
   {
     id: "01",
     name: "Home Decor Range",

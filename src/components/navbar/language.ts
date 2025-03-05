@@ -1,7 +1,7 @@
 export const languageOptions = [
   {
     value: "en",
-    label: "Eng (US)",
+    label: "Eng (UK)",
     flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/2880px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
   },
   {
@@ -11,15 +11,8 @@ export const languageOptions = [
   },
 ];
 
-export interface LanguageSelectorProps {
-  selectedLanguage: {
-    value: string;
-    label: string;
-    flag: string;
-  };
-  setSelectedLanguage: (language: {
-    value: string;
-    label: string;
-    flag: string;
-  }) => void;
+export interface ILanguage {
+  value: string;
+  label: string;
+  flag: string;
 }

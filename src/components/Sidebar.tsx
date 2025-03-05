@@ -23,31 +23,31 @@ export default function Sidebar() {
           <ChartPie size={20} />
           <span>Dashboard</span>
         </li>
-        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-indigo-100">
           <ChartNoAxesColumn size={20} />
           <span>Leaderboard</span>
         </li>
-        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-indigo-100">
           <ShoppingCart size={20} />
           <span>Order</span>
         </li>
-        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-indigo-100">
           <ShoppingBag size={20} />
           <span>Products</span>
         </li>
-        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-indigo-100">
           <ChartSpline size={20} />
           <span>Sales Report</span>
         </li>
-        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-indigo-100">
           <MessageSquare size={20} />
           <span>Messages</span>
         </li>
-        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-indigo-100">
           <Settings size={20} />
           <span>Settings</span>
         </li>
-        <li className="mt-auto flex items-center space-x-2 rounded-lg p-3 text-gray-600 hover:scale-105 hover:cursor-pointer hover:bg-gray-100">
+        <li className="mt-auto flex items-center space-x-2 rounded-lg p-3 text-red-600 hover:scale-105 hover:cursor-pointer hover:bg-red-50">
           <LogOut size={20} />
           <span>Sign Out</span>
         </li>
