@@ -2,15 +2,28 @@
 
 import { FaSearch } from "react-icons/fa";
 import LanguageSelector from "./navbar/LanguageSelector";
-import { languageOptions } from "./navbar/language";
-import { useState } from "react";
 import NotificationBell from "./navbar/NotificationBell";
 import ProfileMenu from "./navbar/ProfileMenu";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const titles: { [key: string]: string } = {
+    "/": "Dashoard",
+    "/leaderboard": "Leaderboard",
+    "/messages": "Messages",
+    "/order": "Order",
+    "/products": "Products",
+    "/sales-report": "Sales Report",
+    "/settings": "Settings",
+  };
+
+  const title = titles[pathname];
+
   return (
     <div className="flex w-full items-center justify-between p-5">
-      <h1 className="text-3xl font-semibold text-gray-700">Dashboard</h1>
+      <h1 className="text-3xl font-semibold text-gray-700">{title}</h1>
 
       <div className="flex items-center gap-10">
         <div className="flex w-96 items-center rounded-lg bg-gray-50 px-4 py-2">
